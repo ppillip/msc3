@@ -4,5 +4,14 @@
 </head>
 
 <body>
-
+    {{>chatMain}}
 </body>
+
+
+<template name="chatMain">
+    <div class="container">
+        <p>{{>loginButtons}}</p>
+        <p>{{>createRoom}}</p>
+        <p>{{>roomList}}</p> <!-- 템플릿 삽입 -->
+    </div>
+</template>
